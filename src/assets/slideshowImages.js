@@ -19,10 +19,37 @@ import slideshow18 from './slideshow18.jpg';
 import slideshow19 from './slideshow19.jpg';
 import slideshow20 from './slideshow20.jpg';
 import slideshow21 from './slideshow21.jpg';
+import slideshow22 from './slideshow22.jpg';
+import slideshow23 from './slideshow23.jpg';
+import slideshow24 from './slideshow24.jpg';
+import slideshow25 from './slideshow25.jpg';
+import slideshow26 from './slideshow26.jpg';
 
 export const slideshowImages = [
-  slideshow1, slideshow2, slideshow3, slideshow4, slideshow5,
-  slideshow6, slideshow7, slideshow8, slideshow9, slideshow10,
-  slideshow11, slideshow12, slideshow13, slideshow14, slideshow15,
-  slideshow16, slideshow17, slideshow18, slideshow19, slideshow20, slideshow21
+  slideshow1,
+  slideshow2,
+  slideshow3,
+  slideshow4,
+  slideshow5,
+  slideshow6,
+  slideshow7,
+  slideshow8,
+  slideshow9,
+  slideshow10,
+  slideshow11,
+  slideshow12,
+  slideshow13,
+  slideshow14,
+  slideshow15,
+  slideshow16,
+  slideshow17,
+  slideshow18,
+  slideshow19,
+  slideshow20,
+  slideshow21,
+  slideshow22,
+  slideshow23,
+  slideshow24,
+  slideshow25,
+  slideshow26
 ];

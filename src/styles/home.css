@@ -8,10 +8,8 @@
 }
 
 /* Título principal */
-.home-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
+
+
 
 /* Navbar horizontal de ícones */
 .home-nav-horizontal {
@@ -91,11 +89,14 @@
   width: 100%;
   max-width: 1200px;
   text-align: left;
-  border: none; /* remove borda original */
-  border-bottom: 1px solid #ddd; /* linha divisória entre os cards */
+  border: none; 
+  border-bottom: 1px solid #ddd; /* mantém a linha divisória */
   overflow: hidden;
-  background-color: #fff;
+  background-color: transparent; /* <- remove o retângulo atrás da imagem */
+  border-radius: 0; /* remove borda arredondada se quiser */
+  box-shadow: none; /* remove sombra do card, se existir */
 }
+
 
 .shortcut-image {
   width: 100%;
@@ -183,4 +184,15 @@
   width: 80%; /* largura da linha */
   margin-left: auto;
   margin-right: auto; /* centraliza */
+}
+
+.home-title {
+  background: linear-gradient(90deg, #4285F4, #34A853);
+
+  /* Gradiente no texto */
+  -webkit-background-clip: text; /* necessário para Chrome/Safari/Edge */
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;          /* padrão futuro (Firefox) */
+  color: transparent;             /* fallback para navegadores antigos */
 }

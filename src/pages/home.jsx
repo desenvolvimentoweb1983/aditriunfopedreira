@@ -13,6 +13,12 @@ import slideshow4 from '../assets/slideshow4.jpg'
 import slideshow1 from '../assets/slideshow1.jpg'
 import slideshow21 from '../assets/slideshow21.jpg'
 
+// Imagens específicas para o slideshow principal
+import slideshow23 from '../assets/slideshow23.jpg'
+import slideshow24 from '../assets/slideshow24.jpg'
+import slideshow25 from '../assets/slideshow25.jpg'
+import slideshow26 from '../assets/slideshow26.jpg'
+
 // Ícone de compartilhamento para atalhos
 import shareIcon from '../assets/icons/share.svg'
 
@@ -35,38 +41,38 @@ export default function Home() {
   const shortcuts = [
     {
       title: 'Grupo de Jovens',
-      description: 'Atividades e encontros para os jovens da congregação.',
+      description: 'Atividades e encontros para os jovens.',
       image: slideshowImages[12],
       link: '/ministerio-jovens',
     },
     {
       title: 'Louvor',
       description:
-        'Nosso ministério se dedica a conduzir a congregação em adoração através da música.',
+        'Ministério de adoração através da música.',
       image: slideshowImages[5],
       link: '/ministerio-louvor',
     },
     {
       title: 'Orações',
-      description: 'Participe de momentos de oração e intercessão.',
+      description: 'Venha participar de momentos de oração.',
       image: slideshowImages[19],
       link: '/oracao-intercessao',
     },
     {
       title: 'Pequeninos',
-      description: 'Atividades educativas e espirituais para crianças.',
+      description: 'Atividades educativas através do Evangelho para as nossas crianças.',
       image: slideshowImages[18],
       link: '/ministerio-infantil',
     },
     {
       title: 'Sobre',
-      description: 'Saiba mais sobre a história e missão da Assembleia.',
+      description: 'Saiba mais sobre a história e missão da Assembleia de Deus.',
       image: slideshowImages[3],
       link: '/sobre',
     },
     {
       title: 'Contato',
-      description: 'Entre em contato com a nossa congregação.',
+      description: 'Entre em contato com a nossa comunidade.',
       image: slideshowImages[0],
       link: '/contato',
     },
@@ -116,7 +122,7 @@ export default function Home() {
 
       {/* 4. Slideshow */}
       <div className="slideshow-wrapper">
-        <Slideshow images={slideshowImages} />
+        <Slideshow images={[slideshow23, slideshow24, slideshow25, slideshow26]} />
       </div>
 
       {/* Linha de separação */}

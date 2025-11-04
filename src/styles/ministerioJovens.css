@@ -1,0 +1,137 @@
+/* ======== CONTAINER GERAL ======== */
+.jovens-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f9fc;
+  color: #333;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ======== CABEÇALHO (TÍTULO + VERSÍCULO) ======== */
+.jovens-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: none; /* remove fundo sólido */
+}
+
+.jovens-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  /* Gradiente igual à Home */
+  background: linear-gradient(90deg, #4285F4, #34A853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.jovens-header p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* ======== SLIDESHOW ======== */
+.jovens-slideshow {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: none; /* remove o sombreado */
+}
+
+/* ======== TEXTO PRINCIPAL ======== */
+.texto-jovens {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.texto-jovens h2 {
+  text-align: center;
+  color: #004aad;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.texto-jovens p {
+  margin-bottom: 15px;
+}
+
+.texto-jovens ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.texto-jovens li {
+  margin-bottom: 10px;
+}
+
+/* ======== SEÇÃO VIOLÃO ======== */
+.violao-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 40px 20px;
+  background: #f0f4ff;
+  border-radius: 20px;
+  box-shadow: none; /* sem sombra */
+}
+
+.violao-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.violao-text h2 {
+  font-size: 1.8rem;
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+.violao-text p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.violao-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.violao-img img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: none; /* remove sombra */
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+  .jovens-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .violao-section {
+    flex-direction: column;
+  }
+
+  .texto-jovens h2 {
+    font-size: 1.5rem;
+  }
+}

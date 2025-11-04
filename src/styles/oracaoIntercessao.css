@@ -1,0 +1,55 @@
+.oracao-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.oracao-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  background: linear-gradient(90deg, #4285f4, #34a853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.oracao-header p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+}
+
+.oracao-slideshow img {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: none;
+  display: block;
+}
+
+.oracao-texto {
+  margin-top: 30px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.oracao-texto h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #4285f4, #34a853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.oracao-texto p {
+  margin-bottom: 15px;
+  color: #333;
+}
