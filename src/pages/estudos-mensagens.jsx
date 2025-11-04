@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react' 
 import { Helmet } from 'react-helmet-async'
 import Slideshow from '../components/slideshow'
 import '../styles/estudosMensagens.css'
+import QuizBiblico from "../components/QuizBiblico";
 
 // Imagens do slideshow
 import slideshow21 from '../assets/slideshow21.jpg'
@@ -20,7 +21,7 @@ export default function EstudosMensagens() {
 
       {/* 1. Cabeçalho */}
       <section className="palavra-header">
-        <h1>Estudos e Mensagens</h1>
+        <h1>Estudo Bíblico</h1>
         <p>“A fé vem pelo ouvir, e o ouvir pela Palavra de Deus.” – Romanos 10:17</p>
       </section>
 
@@ -46,6 +47,32 @@ export default function EstudosMensagens() {
         <p><span className="versiculo">25</span> – Se vivemos pelo Espírito, andemos também pelo Espírito.</p>
         <p><span className="versiculo">26</span> – Não nos tornemos vangloriosos, irritando-nos uns aos outros, invejando-nos uns aos outros.</p>
       </section>
+
+      {/* 4. Reflexão cristã */}
+      <section className="palavra-reflexao">
+        <h3>Reflexão</h3>
+        <p>
+          Gálatas 5:16–26 nos chama a viver guiados pelo Espírito Santo, escolhendo diariamente a liberdade que vem de Deus
+          e não a escravidão da carne. A luta entre a carne e o Espírito é real, mas reconhecer essa tensão nos leva à
+          oração e à dependência de Deus.
+        </p>
+        <p>
+          Paulo nos alerta sobre as obras da carne — ódio, inveja, contenda, idolatria — que afastam a comunhão com Deus
+          e com os irmãos. Em contrapartida, os frutos do Espírito — amor, alegria, paz, mansidão, longanimidade e
+          temperança — manifestam a vida transformada em Cristo.
+        </p>
+        <p>
+          Andar pelo Espírito é mais do que evitar o pecado; é viver com humildade, paciência e domínio próprio, refletindo
+          a presença de Deus em nossas atitudes. Que possamos, diariamente, crucificar a carne e deixar que o Espírito
+          guie nossas escolhas, sendo testemunhas vivas do Reino.
+        </p>
+      </section>
+      {/* Quiz Bíblico */}
+<section className="palavra-quiz">
+  <h2>Teste seus conhecimentos bíblicos!</h2>
+  <QuizBiblico />
+</section>
+
     </main>
   )
 }

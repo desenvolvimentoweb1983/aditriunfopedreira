@@ -1,0 +1,50 @@
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  color: #222;
+  padding-bottom: 50px;
+}
+
+.sobre-title {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #2b2b2b;
+}
+
+.sobre-slideshow-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sobre-conteudo {
+  max-width: 900px;
+  padding: 30px 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.sobre-conteudo h2,
+.sobre-conteudo h3 {
+  margin-top: 30px;
+  color: #444;
+  border-left: 4px solid #c99a00;
+  padding-left: 10px;
+}
+
+.sobre-conteudo p {
+  margin-bottom: 15px;
+}
+.sobre-title {
+  background: linear-gradient(90deg, #4285F4, #34A853);
+
+  /* Gradiente no texto */
+  -webkit-background-clip: text; /* necessário para Chrome/Safari/Edge */
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;          /* padrão futuro (Firefox) */
+  color: transparent;             /* fallback para navegadores antigos */
+}

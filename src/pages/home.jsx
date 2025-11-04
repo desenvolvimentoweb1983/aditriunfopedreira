@@ -22,6 +22,7 @@ import slideshow26 from '../assets/slideshow26.jpg'
 // Ícone de compartilhamento para atalhos
 import shareIcon from '../assets/icons/share.svg'
 
+
 export default function Home() {
   // Estado para barra de pesquisa
   const [searchTerm, setSearchTerm] = useState('')
@@ -37,46 +38,51 @@ export default function Home() {
     { title: 'Contato', image: slideshow1, link: '/contato' },
   ]
 
-  // Cards verticais
-  const shortcuts = [
-    {
-      title: 'Grupo de Jovens',
-      description: 'Atividades e encontros para os jovens.',
-      image: slideshowImages[12],
-      link: '/ministerio-jovens',
-    },
-    {
-      title: 'Louvor',
-      description:
-        'Ministério de adoração através da música.',
-      image: slideshowImages[5],
-      link: '/ministerio-louvor',
-    },
-    {
-      title: 'Orações',
-      description: 'Venha participar de momentos de oração.',
-      image: slideshowImages[19],
-      link: '/oracao-intercessao',
-    },
-    {
-      title: 'Pequeninos',
-      description: 'Atividades educativas através do Evangelho para as nossas crianças.',
-      image: slideshowImages[18],
-      link: '/ministerio-infantil',
-    },
-    {
-      title: 'Sobre',
-      description: 'Saiba mais sobre a história e missão da Assembleia de Deus.',
-      image: slideshowImages[3],
-      link: '/sobre',
-    },
-    {
-      title: 'Contato',
-      description: 'Entre em contato com a nossa comunidade.',
-      image: slideshowImages[0],
-      link: '/contato',
-    },
-  ]
+// Cards verticais
+const shortcuts = [
+  {
+    title: 'Grupo de Jovens',
+    description: 'Atividades e encontros para os nossos jovens.',
+    image: slideshowImages[12],
+    link: '/ministerio-jovens',
+  },
+  {
+    title: 'Louvor',
+    description: 'Ministério de louvor e adoração.',
+    image: slideshowImages[5],
+    link: '/ministerio-louvor',
+  },
+  {
+    title: 'Orações',
+    description: 'Venha participar de momentos de oração e libertação.',
+    image: slideshowImages[19],
+    link: '/oracao-intercessao',
+  },
+  {
+    title: 'Estudo Bíblico',
+    description: 'Aprofunde-se na Palavra de Deus e cresça espiritualmente com nossos estudos.',
+    image: slideshowImages[20], // ajuste a imagem conforme desejar
+    link: '/estudos-mensagens',
+  },
+  {
+    title: 'Pequeninos',
+    description: 'Atividades educativas através do Evangelho para as nossas crianças.',
+    image: slideshowImages[18],
+    link: '/ministerio-infantil',
+  },
+  {
+    title: 'Sobre',
+    description: 'Saiba mais sobre a história e missão da Assembleia de Deus Ipiranga.',
+    image: slideshowImages[3],
+    link: '/sobre',
+  },
+  {
+    title: 'Contato',
+    description: 'Entre em contato conosco.',
+    image: slideshowImages[0],
+    link: '/contato',
+  },
+]
 
   // Filtra os cards conforme o texto digitado
   const filteredShortcuts = shortcuts.filter((sc) =>
