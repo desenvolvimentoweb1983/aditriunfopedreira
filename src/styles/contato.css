@@ -85,3 +85,23 @@
 .whatsapp-icon {
   font-size: 1.2rem;
 }
+.btn-facebook {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #1877f2;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-facebook:hover {
+  background-color: #145dbf;
+}
+
+.facebook-icon {
+  font-size: 1.5rem;
+}

@@ -1,8 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import { FaWhatsapp } from "react-icons/fa";
-import devWebLuis from "../assets/slideshow2.jpg";   // ✅ precisa colocar a extensão .jpg
-import contatoJoao from "../assets/slideshow3.jpg";   // ✅ idem
+import { FaWhatsapp, FaFacebook } from "react-icons/fa";
+import devWebLuis from "../assets/slideshow2.jpg";
+import contatoJoao from "../assets/slideshow3.jpg";
+import igrejaFacebook from "../assets/slideshow1.jpg"; // imagem para o card do Facebook
 import "../styles/contato.css";
 
 export default function Contato() {
@@ -12,7 +13,7 @@ export default function Contato() {
         <title>Contato - Assembleia de Deus JD Triunfo Pedreira</title>
         <meta
           name="description"
-          content="Entre em contato com nossos pastores ou com o desenvolvedor do site. Fale conosco pelo WhatsApp."
+          content="Entre em contato com nossos pastores, o desenvolvedor do site ou acesse nosso Facebook oficial."
         />
       </Helmet>
 
@@ -74,6 +75,26 @@ export default function Contato() {
           >
             <FaWhatsapp className="whatsapp-icon" />
             Enviar mensagem
+          </a>
+        </div>
+
+        {/* ===================== Card - Facebook da Igreja ===================== */}
+        <div className="contato-card">
+          <img
+            src={igrejaFacebook}
+            alt="Assembleia de Deus JD Triunfo Pedreira"
+            className="contato-img"
+          />
+          <h2>Assembleia de Deus JD Triunfo Pedreira</h2>
+          <p className="contato-funcao">Página Oficial no Facebook</p>
+          <a
+            href="https://www.facebook.com/share/1D1RgBLxr6/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-facebook"
+          >
+            <FaFacebook className="facebook-icon" />
+            Visite nosso Facebook
           </a>
         </div>
       </div>
