@@ -18,6 +18,8 @@ import slideshow23 from '../assets/slideshow23.jpg'
 import slideshow24 from '../assets/slideshow24.jpg'
 import slideshow25 from '../assets/slideshow25.jpg'
 import slideshow26 from '../assets/slideshow26.jpg'
+import slideshow35 from '../assets/slideshow35.jpg'
+import slideshow36 from '../assets/slideshow36.jpg'
 
 // Ícone de compartilhamento para atalhos
 import shareIcon from '../assets/icons/share.svg'
@@ -128,7 +130,7 @@ const shortcuts = [
 
       {/* 4. Slideshow */}
       <div className="slideshow-wrapper">
-        <Slideshow images={[slideshow23, slideshow24, slideshow25, slideshow26]} />
+        <Slideshow images={[slideshow23, slideshow24, slideshow25, slideshow26, slideshow35, slideshow36]} />
       </div>
 
       {/* Linha de separação */}
