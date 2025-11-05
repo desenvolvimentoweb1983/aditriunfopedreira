@@ -32,7 +32,7 @@ export default function Home() {
     { title: 'Grupo de Jovens', image: slideshow13, link: '/ministerio-jovens' },
     { title: 'Louvor', image: slideshow6, link: '/ministerio-louvor' },
     { title: 'Orações', image: slideshow20, link: '/oracao-intercessao' },
-    { title: 'Estudo Bíblico', image: slideshow21, link: '/oracao-intercessao' },
+    { title: 'Estudo Bíblico', image: slideshow21, link: '/estudos-mensagens' },
     { title: 'Pequeninos', image: slideshow19, link: '/ministerio-infantil' },
     { title: 'Sobre', image: slideshow4, link: '/sobre' },
     { title: 'Contato', image: slideshow1, link: '/contato' },

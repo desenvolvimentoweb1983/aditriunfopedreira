@@ -16,7 +16,7 @@ export default function Contato() {
         />
       </Helmet>
 
-      <h1 className="contato-title">Entre em Contato</h1>
+      <h1 className="contato-title">Entre em Contato conosco</h1>
 
       <div className="contato-grid">
         {/* ===================== Contato Pastor Paulo Rosa ===================== */}
