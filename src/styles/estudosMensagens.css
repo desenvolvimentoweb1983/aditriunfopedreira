@@ -133,3 +133,10 @@
   padding: 20px;
   background-color: #f9f9f9;
 }
+/* Vídeo entre o texto bíblico e a reflexão */
+
+.palavra-video video {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
