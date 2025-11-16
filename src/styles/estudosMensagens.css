@@ -1,4 +1,6 @@
-/* Container principal */
+/* ============================================
+   Container principal
+   ============================================ */
 .palavra-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -7,14 +9,15 @@
   text-align: center;
 }
 
-/* Cabeçalho */
+/* ============================================
+   Cabeçalho da página (Título e subtítulo)
+   ============================================ */
 .palavra-header h1 {
   font-size: 2.2rem;
   margin-bottom: 5px;
   background: linear-gradient(90deg, #4285f4, #34a853);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   color: transparent;
 }
 
@@ -24,18 +27,20 @@
   color: #555;
 }
 
-/* Slideshow */
+/* ============================================
+   Slideshow / Imagens principais
+   ============================================ */
 .palavra-slideshow img {
   width: 100%;
   max-width: 1000px;
   margin: 40px auto;
   border-radius: 20px;
-  overflow: hidden;
-  box-shadow: none;
   display: block;
 }
 
-/* Texto bíblico */
+/* ============================================
+   Texto bíblico (conteúdo principal)
+   ============================================ */
 .palavra-texto {
   margin-top: 30px;
   text-align: left;
@@ -64,23 +69,24 @@
   color: #4285f4;
 }
 
-/* Reflexão */
+/* ============================================
+   Reflexão / Devocional
+   ============================================ */
 .palavra-reflexao {
   margin-top: 40px;
   padding: 20px 25px;
-  background-color: #f4f9ff; /* tom suave de azul */
-  border-left: 6px solid #4285f4; /* barra de destaque */
+  background-color: #f4f9ff;
+  border-left: 6px solid #4285f4;
   border-radius: 12px;
   text-align: left;
   line-height: 1.6;
   color: #333;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* sombra leve */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .palavra-reflexao:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 .palavra-reflexao h3 {
@@ -91,11 +97,17 @@
   -webkit-text-fill-color: transparent;
 }
 
-.palavra-reflexao p {
-  margin-bottom: 15px;
+/* ============================================
+   Quiz
+   ============================================ */
+.palavra-quiz {
+  margin-top: 40px;
+  text-align: center;
 }
 
-/* Responsivo */
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
 @media (max-width: 768px) {
   .palavra-container {
     padding: 15px;
@@ -115,7 +127,6 @@
   }
 
   .palavra-slideshow img {
-    max-width: 100%;
     margin: 30px auto;
   }
 
@@ -123,20 +134,28 @@
     padding: 15px 20px;
   }
 }
-.palavra-quiz {
-  margin-top: 40px;
-  text-align: center;
+
+/* ============================================
+   VÍDEO – PEQUENO E RESPONSIVO
+   ============================================ */
+.palavra-video {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
-.palavra-quiz .quiz-container {
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-/* Vídeo entre o texto bíblico e a reflexão */
 
 .palavra-video video {
-  width: 250px;
-  height: auto;
+  width: 25%;         /* tamanho reduzido */
+  max-width: 250px;   /* limite máximo em telas largas */
   border-radius: 10px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Responsivo para tablet/celular */
+@media (max-width: 768px) {
+  .palavra-video video {
+    width: 50%;       /* menor no celular */
+    max-width: 150px;
+  }
 }

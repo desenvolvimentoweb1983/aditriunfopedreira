@@ -62,7 +62,7 @@ export default function EstudosMensagens() {
 
       {/* 3.1 Vídeo entre o texto e a reflexão */}
       <div className="palavra-video">
-        <video controls width="100%">
+        <video controls>
           <source src={video1} type="video/mp4" />
           Seu navegador não suporta vídeos HTML5.
         </video>

@@ -35,8 +35,8 @@
   overflow: hidden;
   background: transparent;
 
-  width: 70%;          /* <<< Slideshow menor */
-  max-width: 600px;    /* <<< Tamanho máximo */
+  width: 70%;
+  max-width: 600px;
   animation: fadeUp 1.2s ease both;
 }
 
@@ -118,16 +118,32 @@
 }
 
 /* ===================== Vídeo abaixo do slideshow ===================== */
+/* ============================================
+   BLOCO DO VÍDEO – configurado e centralizado
+   ============================================ */
+
+/* ============================================
+   BLOCO DO VÍDEO – configurado e centralizado
+   ============================================ */
+
+/* Container do vídeo */
+/* ============================================
+   BLOCO DO VÍDEO – configurado e centralizado
+   ============================================ */
+
+/* Container do vídeo */
 .palavra-video {
-  margin-bottom: 35px;
+  text-align: center;
+  margin: 30px 0;
 }
 
+/* Configurações do vídeo — tamanho maior ainda */
 .palavra-video video {
-  width: 480px;        /* <<< Aumentado um pouco */
-  max-width: 95%;
+  width: 100%;               
+  max-width: 420px !important;   /* 🔥 aumentado novamente */
+  height: auto !important;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(255, 165, 0, 0.3);
-  outline: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 /* ===================== Responsividade ===================== */
@@ -147,7 +163,7 @@
   }
 
   .louvor-slideshow {
-    width: 85%;          /* Slideshow menor no tablet */
+    width: 85%;
     max-width: 500px;
   }
 
@@ -167,6 +183,11 @@
     font-size: 0.95rem;
     padding: 9px 15px;
   }
+
+  /* Vídeo no tablet */
+  .palavra-video video {
+    width: 720px;   /* <<< AUMENTADO */
+  }
 }
 
 @media (max-width: 480px) {
@@ -182,7 +203,6 @@
     font-size: 0.9rem;
   }
 
-  /* Slideshow no celular */
   .louvor-slideshow {
     width: 90%;
     max-width: none;
@@ -202,8 +222,9 @@
     padding: 8px 12px;
   }
 
-  /* Vídeo no celular (um pouco maior) */
+  /* Vídeo no celular — AUMENTADO */
   .palavra-video video {
-    width: 380px;   /* <<< Aumentado */
+    width: 520px;
+    max-width: 100%;
   }
 }
