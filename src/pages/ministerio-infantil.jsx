@@ -15,6 +15,10 @@ import infantil4 from "../assets/slideshow17.jpg";
 import infantil5 from "../assets/slideshow18.jpg";
 import infantil6 from "../assets/slideshow19.jpg";
 
+//videos
+import video2 from "../assets/videos/video2.mp4";
+
+// css
 import "../styles/ministerio-infantil.css";
 
 export default function MinisterioInfantil() {
@@ -35,7 +39,12 @@ export default function MinisterioInfantil() {
         “Ensina a criança no caminho em que deve andar, e, ainda quando for velho,
         não se desviará dele.” – Provérbios 22:6
       </p>
-
+      
+      {/* Vídeo  */}
+      <div className="palavra-video">
+      <video src={video2} controls />
+      </div>
+      
       {/* Slideshow */}
       <div className="louvor-slideshow">
         <img
@@ -44,7 +53,7 @@ export default function MinisterioInfantil() {
           className="slideshow-img"
         />
       </div>
-
+      
       {/* Conteúdo */}
       <section className="section">
         <h2>📖 História Bíblica: Davi</h2>

@@ -28,13 +28,15 @@
   display: inline-block;
 }
 
-/* ===================== Slideshow ===================== */
+/* ===================== Slideshow (MENOR) ===================== */
 .louvor-slideshow {
   margin: 0 auto 40px auto;
   border-radius: 20px;
   overflow: hidden;
   background: transparent;
-  width: 100%;
+
+  width: 70%;          /* <<< Slideshow menor */
+  max-width: 600px;    /* <<< Tamanho máximo */
   animation: fadeUp 1.2s ease both;
 }
 
@@ -115,6 +117,19 @@
   }
 }
 
+/* ===================== Vídeo abaixo do slideshow ===================== */
+.palavra-video {
+  margin-bottom: 35px;
+}
+
+.palavra-video video {
+  width: 480px;        /* <<< Aumentado um pouco */
+  max-width: 95%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 165, 0, 0.3);
+  outline: none;
+}
+
 /* ===================== Responsividade ===================== */
 @media (max-width: 768px) {
   .ministerio-infantil-container {
@@ -131,8 +146,9 @@
     padding: 8px 10px;
   }
 
-  .louvor-slideshow img {
-    border-radius: 15px;
+  .louvor-slideshow {
+    width: 85%;          /* Slideshow menor no tablet */
+    max-width: 500px;
   }
 
   .section {
@@ -166,6 +182,12 @@
     font-size: 0.9rem;
   }
 
+  /* Slideshow no celular */
+  .louvor-slideshow {
+    width: 90%;
+    max-width: none;
+  }
+
   .section {
     margin-bottom: 20px;
     padding: 15px 10px;
@@ -178,5 +200,10 @@
   .link-youtube {
     font-size: 0.9rem;
     padding: 8px 12px;
+  }
+
+  /* Vídeo no celular (um pouco maior) */
+  .palavra-video video {
+    width: 380px;   /* <<< Aumentado */
   }
 }
