@@ -16,7 +16,7 @@ import infantil5 from "../assets/slideshow18.jpg";
 import infantil6 from "../assets/slideshow19.jpg";
 
 //videos
-import video2 from "../assets/videos/video2.mp4";
+import video3 from "../assets/videos/video3.mp4";
 
 // css
 import "../styles/ministerio-infantil.css";
@@ -42,7 +42,7 @@ export default function MinisterioInfantil() {
       
       {/* Vídeo  */}
       <div className="palavra-video">
-      <video src={video2} controls />
+      <video src={video3} controls />
       </div>
       
       {/* Slideshow */}
