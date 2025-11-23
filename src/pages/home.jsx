@@ -23,6 +23,7 @@ import slideshow39 from '../assets/slideshow39.jpg';
 import slideshow40 from '../assets/slideshow40.jpg';
 import slideshow41 from '../assets/slideshow41.jpg';
 import slideshow43 from '../assets/slideshow43.jpg';
+import slideshow44 from '../assets/slideshow44.jpg';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -100,7 +101,9 @@ export default function Home() {
             slideshow39,
             slideshow40,
             slideshow41,
-            slideshow43
+            slideshow43,
+            slideshow44
+            
           ]}
         />
       </div>

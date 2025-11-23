@@ -8,6 +8,7 @@ import slideshow5 from '../assets/slideshow5.jpg'
 import slideshow10 from '../assets/slideshow10.jpg'
 import slideshow20 from '../assets/slideshow20.jpg'
 import slideshow37 from '../assets/slideshow37.jpg'
+import slideshow44 from '../assets/slideshow44.jpg'
 
 export default function OracaoIntercessao() {
   return (
@@ -28,7 +29,7 @@ export default function OracaoIntercessao() {
 
       {/* 2. Slideshow */}
       <div className="oracao-slideshow">
-        <Slideshow images={[slideshow5, slideshow10, slideshow20, slideshow37]} />
+        <Slideshow images={[slideshow5, slideshow10, slideshow20, slideshow37, slideshow44]} />
       </div>
 
       {/* 3. Texto introdutório */}

@@ -43,6 +43,7 @@ import slideshow40 from './slideshow40.jpg';
 import slideshow41 from './slideshow41.jpg';
 import slideshow42 from './slideshow42.jpg';
 import slideshow43 from './slideshow43.jpg';
+import slideshow44 from './slideshow44.jpg';
 
 export const slideshowImages = [
   slideshow1,
@@ -87,5 +88,6 @@ export const slideshowImages = [
   slideshow40,
   slideshow41,
   slideshow42,
-  slideshow43
+  slideshow43,
+  slideshow44,
 ];
