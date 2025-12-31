@@ -18,13 +18,12 @@ import slideshow23 from '../assets/slideshow23.jpg';
 import slideshow24 from '../assets/slideshow24.jpg';
 import slideshow25 from '../assets/slideshow25.jpg';
 import slideshow26 from '../assets/slideshow26.jpg';
-import slideshow35 from '../assets/slideshow35.jpg';
 import slideshow39 from '../assets/slideshow39.jpg';
 import slideshow40 from '../assets/slideshow40.jpg';
 import slideshow41 from '../assets/slideshow41.jpg';
 import slideshow43 from '../assets/slideshow43.jpg';
 import slideshow44 from '../assets/slideshow44.jpg';
-import slideshow45 from '../assets/slideshow45.jpg';
+import slideshow46 from '../assets/slideshow46.jpg';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -98,13 +97,12 @@ export default function Home() {
             slideshow24,
             slideshow25,
             slideshow26,
-            slideshow35,
             slideshow39,
             slideshow40,
             slideshow41,
             slideshow43,
             slideshow44,
-            slideshow45
+            slideshow46
             
           ]}
         />
